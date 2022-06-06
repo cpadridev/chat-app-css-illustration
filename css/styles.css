@@ -64,11 +64,12 @@ body {
 }
 
 .smartphone {
+  transform: scale(0.75);
   background-color: var(--light-grayish-violet-color);
   border: 10px white solid;
   border-radius: 50px;
   width: 400px;
-  margin: 20%;
+  margin-left: -15px;
 }
 
 .contact-zone {
@@ -235,10 +236,22 @@ body {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (min-width: 560px) {
   .smartphone {
-    transform: scale(0.75);
     margin: 5%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .smartphone {
+    transform: scale(1);
+    margin: 10%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .smartphone {
+    margin: 20%;
   }
 }
 
@@ -247,7 +260,7 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 100vh;
   }
-  
+
   .hero-text {
     margin-left: 120px;
     position: relative;
@@ -278,7 +291,7 @@ body {
   }
 
   .hero-image {
-    width: 1000px;
+    width: 800px;
     height: 800px;
   }
 
@@ -291,7 +304,7 @@ body {
 
   .smartphone {
     margin-top: 50px;
-    margin-left: 500px;
+    margin-left: 300px;
   }
 
   .hero-text {
